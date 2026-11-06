@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: GAMA-SWAGGER
+  output:
+    ansi:
+      enabled: ALWAYS
+
+server:
+  port: ${SERVER_PORT:4545}
+
+openProject:
+  isOpen: true
+  web:
+    openUrl: "http://localhost:${server.port}/swagger-ui/index.html"
+
+# SpringDoc OpenAPI Documentation
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+    version: OPENAPI_3_1
+  swagger-ui:
+    path: /swagger-ui/index.html
+    tags-sorter: alpha
+    operations-sorter: method
+    display-request-duration: true
+
+# Professional & Colorful Logging Configuration
+logging:
+  pattern:
+    console: "%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(%5p) %clr(${PID:- }){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%-35.35logger{30}){cyan} %clr(:){faint} %m%n%wEx"
+  level:
+    root: INFO
+    org.springframework.boot: INFO
+    org.springframework.web: INFO
+    org.springdoc: ERROR
+    org.apache.catalina: WARN
+    org.apache.coyote: WARN
+    org.apache.tomcat: WARN
+    com.gama.swagger: INFO
