@@ -3,7 +3,7 @@
 
 > Automatically opens Swagger UI in your system's default browser as soon as your Spring Boot application boots up — across **Windows**, **macOS**, and **Linux**, with robust headless and Desktop API fallbacks.
 
-🔗 **GitHub Repository**: [YOUR GITHUB LINK](https://github.com/your-username/spring-boot-swagger-launcher)
+🔗 **GitHub Repository**: [Gama Swagger](https://github.com/gama1221/gama-swagger.git)
 
 ---
 
@@ -260,7 +260,7 @@ curl -X GET "http://localhost:4545/api/browser/steps"
 
 ```bash
 # Clone the repository
-git clone [YOUR GITHUB LINK]
+git clone https://github.com/gama1221/gama-swagger.git
 cd swagger
 
 # Compile and run test suite
